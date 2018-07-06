@@ -1,7 +1,7 @@
 public abstract class Accessory {
 
-    private double costPrice;
-    private double sellPrice;
+    double costPrice;
+    double sellPrice;
 
     public Accessory(double costPrice, double sellPrice){
         this.costPrice = costPrice;

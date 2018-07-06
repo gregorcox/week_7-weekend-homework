@@ -1,4 +1,4 @@
-public class Saxophone extends Instrument implements IPlay {
+public class Saxophone extends Instrument implements IPlay, ISell {
 
     private int numberOfValves;
 
@@ -13,5 +13,9 @@ public class Saxophone extends Instrument implements IPlay {
 
     public String play(){
         return "Playing jazz";
+    }
+
+    public double calculateMarkup(){
+        return sellPrice - costPrice;
     }
 }

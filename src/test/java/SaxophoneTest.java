@@ -47,5 +47,10 @@ public class SaxophoneTest {
         assertEquals("Playing jazz", saxophone.play());
     }
 
+    @Test
+    public void canCalculateMarkup(){
+        assertEquals(30, saxophone.calculateMarkup(), 0.1);
+    }
+
 
 }

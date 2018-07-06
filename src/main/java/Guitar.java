@@ -1,4 +1,4 @@
-public class Guitar extends Instrument implements IPlay {
+public class Guitar extends Instrument implements IPlay, ISell  {
 
     private int numberOfStrings;
 
@@ -13,5 +13,9 @@ public class Guitar extends Instrument implements IPlay {
 
     public String play(){
         return "Playing rock";
+    }
+
+    public double calculateMarkup(){
+        return sellPrice - costPrice;
     }
 }

@@ -21,4 +21,9 @@ public class DrumsSticksTest {
     public void hasSellPrice() {
         assertEquals(15, drumsSticks.getSellPrice(), 0.1);
     }
+
+    @Test
+    public void canCalculateMarkup(){
+        assertEquals(5, drumsSticks.calculateMarkup(), 0.1);
+    }
 }
