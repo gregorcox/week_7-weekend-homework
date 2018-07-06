@@ -1,4 +1,4 @@
-public class Saxophone extends Instrument  {
+public class Saxophone extends Instrument implements IPlay {
 
     private int numberOfValves;
 
@@ -9,5 +9,9 @@ public class Saxophone extends Instrument  {
 
     public int getNumberOfValves(){
         return numberOfValves;
+    }
+
+    public String play(){
+        return "Playing jazz";
     }
 }
